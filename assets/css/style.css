@@ -119,7 +119,7 @@ table {
     border-color: #32383e;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 700px) {
     table, thead, tbody, th, td, tr {
         display: block;
     }
@@ -176,7 +176,23 @@ table {
     margin: 1em 2em;
 }
 
+#update_user .form-group input[type="email"],
+#add_user .form-group input[type="email"]{
+    width: 100%;
+    padding: 0.6em 1em;
+    margin: 0.5em 0;
+    border: 1px solid var(--border); 
+    font-family: 'Barlow', sans-serif;
+    font-size: 1em;
+    border-radius: 0.2em;
+}
+
 /* adding styles to radio buttons */
+
+#form-submit-button {
+    margin-top: 1.5rem !important;
+    outline: none;
+}
 
 .radio input[type="radio"] {
     position: absolute;
@@ -230,6 +246,12 @@ table {
 
 #update_user .form-group .btn:hover,
 #add_user .form-group .btn:hover {
+    background-color: var(--dark);
+    color: white;
+}
+
+#update_user .form-group .btn:focus,
+#add_user .form-group .btn:focus {
     background-color: var(--dark);
     color: white;
 }
